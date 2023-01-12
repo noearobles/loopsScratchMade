@@ -33,20 +33,23 @@ const arrayOfPersons = [person1, person2, person3];
 
 console.log(arrayOfPersons);
 
-for (const person of arrayOfPersons) {
-  if (parseInt(person.birthDate.slice(-1)) % 2) {
-    console.log(person.birthDate);
+for (const array of arrayOfPersons) {
+  if (parseInt(array.birthDate.slice(-1)) % 2) {
+  
+    console.log(array.birthDate);
   }
 }
 
-const mapPersons = arrayOfPersons.map((i) => console.log(i));
+const mapArray = arrayOfPersons.map((i) => console.log(i));
 
-const filterpersons = arrayOfPersons.filter((person) =>
-  console.log(person.gender)
+const filterArray = arrayOfPersons.filter((array) =>
+ 
+console.log(array.gender)
 );
 
-const test = (input) => {
+const bDate = (input) => {
   if (parseInt(input.slice(-4)) < 1990) {
+    
     return true;
   } else {
     return false;
@@ -54,5 +57,6 @@ const test = (input) => {
 };
 
 for (const person of arrayOfPersons) {
-  console.log(test(person.birthDate));
+  
+  console.log(bDate(person.birthDate));
 }
